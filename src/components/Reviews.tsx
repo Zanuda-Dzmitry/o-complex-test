@@ -6,8 +6,7 @@ import DOMPurify from "dompurify";
 export function Reviews() {
   const { data: reviews, isLoading, isError } = useGetReviewsQuery();
 
-  if (isLoading)
-    return <div className="text-center py-8">Loading reviews...</div>;
+  if (isLoading) return <div className="text-center py-8">Загрузка...</div>;
   if (isError)
     return (
       <div className="text-red-500 text-center py-8">Error loading reviews</div>
