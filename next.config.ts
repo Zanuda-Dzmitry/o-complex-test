@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export", // Включает статический экспорт
-  // Для GitHub Pages может понадобиться basePath если проект в поддиректории
-  basePath: process.env.NODE_ENV === "production" ? "/your-repo-name" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/your-repo-name/" : "",
-  trailingSlash: true, // Рекомендуется для GitHub Pages
+  output: "export", // Обязательно для статического экспорта
+  basePath: process.env.GITHUB_PAGES ? "/repo-name" : "", // Замените 'repo-name' на имя вашего репозитория
+  assetPrefix: process.env.GITHUB_PAGES ? "/repo-name/" : "",
+  trailingSlash: true, // Добавляет `/` к URL (рекомендуется для GitHub Pages)
 };
 
 export default nextConfig;
