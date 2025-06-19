@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+```bash
+npm i
+```
 
 ```bash
 npm run dev
@@ -14,23 +14,38 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🛍️ Современный интернет-магазин
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Этот проект разработан с использованием современного стека: `Next.js`, `TypeScript`, `@reduxjs/toolkit` и `Tailwind CSS`. Полностью адаптирован под мобильные устройства и планшеты, обеспечивая комфортное взаимодействие на любой платформе.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Технологии
 
-## Learn More
+- **Nuxt.js** — SSR-фреймворк на базе React.js
+- **TypeScript** — строгая типизация для повышения надежности кода
+- **@reduxjs/toolkit + react-redux** — управление состоянием
+- **Tailwind CSS** — современная утилитарная система стилей
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Адаптивный дизайн
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Интерфейс оптимизирован под:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- смартфоны
+- планшеты
+- десктопы
 
-## Deploy on Vercel
+## 🧩 Основной функционал
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Типизация:** весь код написан с использованием TypeScript
+- **Управление состоянием:** логика реализована через Redux Toolkit
+- **Список товаров:** добавление и удаление товаров динамически
+- **Корзина:**
+  - добавление товаров
+  - изменение их количества
+  - удаление при необходимости
+- **Бесконечная прокрутка:** новые товары подгружаются по мере прокрутки
+- **Валидация заказа:** перед оформлением данные проходят проверку
+- **Обработка заказа:** подтверждение успешной покупки после отправки на сервер
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+✨ Проект легко масштабируется и может быть расширен дополнительными модулями: авторизация, оплата, история заказов и многое другое.
