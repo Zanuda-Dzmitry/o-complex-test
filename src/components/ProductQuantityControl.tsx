@@ -82,7 +82,7 @@ export function ProductQuantityControl({
             }
             dispatch(updateQuantity({ id: product.id, quantity: newQuantity }));
           }}
-          className="w-10 text-center  p-1"
+          className="w-10 text-center p-1"
         />
         <button
           onClick={() => handleChange(1)}
